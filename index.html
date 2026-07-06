@@ -3,71 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>しゅっちょーアプリ</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#007AFF">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
+<header class="header">
     <h1>🚄 しゅっちょーアプリ</h1>
-    <p>名古屋出張　2026年8月6日～8日</p>
-    </header>
+    <p>名古屋出張サポート</p>
+</header>
 
-    <div class="container">
+<main class="container">
 
-        <div class="card">
-    <div>
-        <div class="left">📅 今日の予定</div>
-        <div class="small">名古屋出張</div>
-    </div>
-
-    <div class="right">
-        ＞
-    </div>
-    </div>
-
-        <div class="card">
-            🚄 新幹線
-            <div class="small">
-                時刻・予約番号
-            </div>
+    <button class="card" id="scheduleBtn">
+        <div>
+            <div class="title">📅 今日の予定</div>
+            <div class="sub">スケジュールを確認</div>
         </div>
+        <span>›</span>
+    </button>
 
-        <div class="card">
-            🏨 ホテル
-            <div class="small">
-                アパホテル〈名古屋栄〉
-            </div>
+    <button class="card" id="trainBtn">
+        <div>
+            <div class="title">🚄 新幹線</div>
+            <div class="sub">時刻・予約番号</div>
         </div>
+        <span>›</span>
+    </button>
 
-        <div class="card">
-            📍 イベント
-            <div class="small">
-                中日ビル
-            </div>
+    <button class="card" id="hotelBtn">
+        <div>
+            <div class="title">🏨 ホテル</div>
+            <div class="sub">アパホテル〈名古屋栄〉</div>
         </div>
+        <span>›</span>
+    </button>
 
-        <div class="card">
-            🗺 地図
-            <div class="small">
-                Googleマップ
-            </div>
+    <button class="card" id="eventBtn">
+        <div>
+            <div class="title">📍 イベント</div>
+            <div class="sub">中日ビル</div>
         </div>
+        <span>›</span>
+    </button>
 
-        <div class="card">
-            🍜 ご飯
-            <div class="small">
-                ひつまぶし・味噌カツ
-            </div>
+    <button class="card" id="mapBtn">
+        <div>
+            <div class="title">🗺 マップ</div>
+            <div class="sub">Googleマップ</div>
         </div>
+        <span>›</span>
+    </button>
 
-    </div>
+    <button class="card" id="gourmetBtn">
+        <div>
+            <div class="title">🍜 グルメ</div>
+            <div class="sub">ひつまぶし・味噌カツ</div>
+        </div>
+        <span>›</span>
+    </button>
 
-    <script src="script.js"></script>
+    <button class="card" id="shoppingBtn">
+        <div>
+            <div class="title">🛍 買い物</div>
+            <div class="sub">Supreme・Aesop</div>
+        </div>
+        <span>›</span>
+    </button>
+
+    <button class="card" id="checkBtn">
+        <div>
+            <div class="title">☑ 持ち物</div>
+            <div class="sub">忘れ物チェック</div>
+        </div>
+        <span>›</span>
+    </button>
+
+</main>
+
+<footer class="footer">
+    Version 0.1.0
+</footer>
+
+<script src="js/storage.js"></script>
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
